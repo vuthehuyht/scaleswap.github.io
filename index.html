@@ -3,9 +3,9 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="icon" href="./favicon.ico" />
+    <link rel="icon" href="./amdtoken 2 png.png" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Revolve Games</title>
+    <title>AMD Token</title>
     <link href="./static/media/css/custom.css" rel="stylesheet" />
     <link href="./static/media/css/test.css" rel="stylesheet" />
     <link href="./2.b08e3099.chunk.css" rel="stylesheet" />
@@ -833,7 +833,7 @@
                 <div class="EighthPart_outerWrapper__1wMZr">
                     <div class="EighthPart_line__3peTD" style="background-image: url('./static/media/p8l.99111bac.svg')"></div>
                     <div class="container align-self-center" style="max-width: 42%;">
-                        <div class="countdown" data-countdown="10/15/2021 00:00:00" id="countdown-time">
+                        <div class="countdown" data-countdown="12/15/2021 00:00:00" id="countdown-time">
                             <div class="countdown-item">
                                 <span class="countdown-time countdown-time-first" id="days">30</span>
                                 <span class="countdown-text">Days</span>
@@ -999,8 +999,8 @@
     </script>
     <script type="text/javascript">
         // Countdown Clock
-        //let upgradeTime = document.getElementById("countdown-time") ? .dataset ? .countdown;
-        var end = new Date("10/15/2021 00:00:00");
+        let upgradeTime = document.getElementById("countdown-time").getAttribute('data-countdown');
+        var end = new Date(upgradeTime);
 
         var _second = 1000;
         var _minute = _second * 60;
