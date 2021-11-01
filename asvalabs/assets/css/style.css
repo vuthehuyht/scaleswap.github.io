@@ -2354,7 +2354,7 @@ img {
     margin-top: 5%;
 }
 
-@media (max-width: 412px) {
+@media (max-width: 420px) {
     .tagline {
         font-weight: 600;
         line-height: 57px;
