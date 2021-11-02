@@ -1,41 +1,34 @@
-(function(document, $) {
-    document.addEventListener("DOMContentLoaded", function(event) {
-        var timeEnd = new Date("2021-11-30").setHours(0, 0, 0, 0);
-        var today = new Date();
-        var dd = today.getDate();
-        var mm = today.getMonth() + 1;
-        var yyyy = today.getFullYear();
-        if (dd < 10) {
-            dd = "0" + dd;
-        }
-        if (mm < 10) {
-            mm = "0" + mm;
-        }
-        var initDate = new Date(timeEnd);
-        var countDownDate = initDate.getTime();
-        var x = setInterval(function() {
-            var now = new Date().getTime();
-            var distance = countDownDate - now;
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+let upgradeTime = document.getElementById("countdown-time").getAttribute('data-date');
+var end = new Date(upgradeTime);
 
-            if (days < 10)
-                days = `0${days}`;
-            if (hours < 10)
-                hours = `0${hours}`;
-            if (minutes < 10)
-                minutes = `0${minutes}`;
-            if (seconds < 10)
-                seconds = `0${seconds}`;
-            document.getElementById('days').innerText = days;
-            document.getElementById('hours').innerText = hours;
-            document.getElementById('minutes').innerText = minutes;
-            document.getElementById('seconds').innerText = seconds;
-            if (distance < 0) {
-                clearInterval(x);
-            }
-        }, 1000);
-    });
-})(document, $);
+var _second = 1000;
+var _minute = _second * 60;
+var _hour = _minute * 60;
+var _day = _hour * 24;
+var timer;
+
+function showRemaining() {
+    let now = new Date();
+    let distance = end - now;
+
+    if (distance < 0) {
+        clearInterval(timer);
+        return;
+    }
+
+    let days = Math.floor(distance / _day);
+    let hours = Math.floor((distance % _day) / _hour);
+    let minutes = Math.floor((distance % _hour) / _minute);
+    let seconds = Math.floor((distance % _minute) / _second);
+
+    function pad(n) {
+        return (n < 10 ? "0" + n : n);
+    }
+
+    document.getElementById("days").innerText = pad(days)
+    document.getElementById("hours").innerText = pad(hours)
+    document.getElementById("minutes").innerText = pad(minutes)
+    document.getElementById("seconds").innerText = pad(seconds)
+}
+
+timer = setInterval(showRemaining, 1000);
