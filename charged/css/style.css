@@ -10370,3 +10370,59 @@ a {
         align-self: auto;
     }
 }
+
+.w-slider-dot {
+    background: #1D1D1F;
+}
+
+.w-slider-dot.w-active {
+    background: #ec0c69;
+}
+
+.css-selector {
+    background: linear-gradient(313deg, #d8226e, #383d63);
+    background-size: 400% 400%;
+    -webkit-animation: heading-gradient 5s ease infinite;
+    -moz-animation: heading-gradient 5s ease infinite;
+    animation: heading-gradient 5s ease infinite;
+}
+
+@-webkit-keyframes heading-gradient {
+    0% {
+        background-position: 0% 10%
+    }
+    50% {
+        background-position: 100% 91%
+    }
+    100% {
+        background-position: 0% 10%
+    }
+}
+
+@-moz-keyframes heading-gradient {
+    0% {
+        background-position: 0% 10%
+    }
+    50% {
+        background-position: 100% 91%
+    }
+    100% {
+        background-position: 0% 10%
+    }
+}
+
+@keyframes heading-gradient {
+    0% {
+        background-position: 0% 10%
+    }
+    50% {
+        background-position: 100% 91%
+    }
+    100% {
+        background-position: 0% 10%
+    }
+}
+
+.wf-force-outline-none[tabindex="-1"]:focus {
+    outline: none;
+}
