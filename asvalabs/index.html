@@ -32,6 +32,7 @@
 
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/custom.css" rel="stylesheet">
+    <link href="assets/css/style-2.css" rel="stylesheet">
     <style type="text/css">
         .typewrite {
             font-size: 30px;
@@ -121,8 +122,6 @@
     </section>
 
     <main id="main">
-
-
         <section id="about" class="about" style="background-color: #121212; color:white;  ">
             <div class="container" style="transform: translateX(-35px);">
 
@@ -408,89 +407,85 @@
             <br><br>
 
         </section>
-        <section id="presale">
-            <div class="airdrop pt-5">
-                <div class="container">
-                    <div class="airdrop__wrap">
-                        <h1 class="mt-4 mt-md-0 text-center">COUNTDOWN Airdrop End & Listing Top Exchange</h1>
-                        <div class="airdrop__count-down d-flex justify-content-center space-x-8 py-3 mt-4">
-                            <div id="countdown-time" class="airdrop__count-down-item d-flex justify-content-center flex-column text-center" data-date="12/15/2021 00:00:00">
-                                <div class="airdrop__count-down-item--number lh-1 text-center">
-                                    <span id="days" class="fs-1 fw-bold">00</span>
-                                </div>
-                                <div class="airdrop__count-down-item--label">
-                                    <span class="text-uppercase fw-medium">Days</span>
-                                </div>
-                            </div>
-                            <div class="airdrop__count-down-item d-flex justify-content-center flex-column text-center">
-                                <div class="airdrop__count-down-item--number lh-1 text-center">
-                                    <span id="hours" class="fs-1 fw-bold">00</span>
-                                </div>
-                                <div class="airdrop__count-down-item--label">
-                                    <span class="text-uppercase fw-medium">Hours</span>
-                                </div>
-                            </div>
-                            <div class="airdrop__count-down-item d-flex justify-content-center flex-column text-center">
-                                <div class="airdrop__count-down-item--number lh-1 text-center">
-                                    <span id="minutes" class="fs-1 fw-bold">00</span>
-                                </div>
-                                <div class="airdrop__count-down-item--label">
-                                    <span class="text-uppercase fw-medium">Minutes</span>
-                                </div>
-                            </div>
-                            <div class="airdrop__count-down-item d-flex justify-content-center flex-column text-center">
-                                <div class="airdrop__count-down-item--number lh-1 text-center">
-                                    <span id="seconds" class="fs-1 fw-bold">00</span>
-                                </div>
-                                <div class="airdrop__count-down-item--label">
-                                    <span class="text-uppercase fw-medium">Seconds</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-show">
-                            <div class="part">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-6 col-md-8 col-sm-10">
-                                        <a href="javascript:void(0)" id="airbtn" style="border: 1px solid rgb(51, 51, 51);" class="btn btn-default py-2 px-4 fs-6 mt-5 d-block">Claim Airdrop</a>
+
+        <section id="airdrop" class="py-5" style="background-color: #000;">
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <div class="airdrop__wrap py-5 px-4 text-center">
+                            <img src="./css/airdrop.svg" class="img-fluid" style="max-height: 60px;" alt="">
+                            <h1 class="text-center text-white fw-bold mt-3">Claim <br> Airdrop</h1>
+                            <p class="text-white text-center fs-4">(200 $BIG)</p>
+                            <p class="text-white text-center">Airdrop will ends on <span id="timeEnd">Tue Nov 16 2021</span>.</p>
+                            <div class="airdrop__count-down d-flex justify-content-center space-x-8 py-3 mt-4" id="countdown-time" data-date="12/15/2021 00:00:00">
+                                <div class="airdrop__count-down-item d-flex justify-content-center flex-column text-center">
+                                    <div class="airdrop__count-down-item--number lh-1 text-center">
+                                        <span id="days" class="fs-1 fw-bold text-white">16d</span>
                                     </div>
-                                    <input style="display: none;" id="buyinputone" type="text" class="my-space input-bordered" required="required" placeholder="0.002" value="0.002">
-
                                 </div>
-
-                                <p class="text-center mt-5">Support: Metamask, Trustwallet</p>
-                                <p class="text-center">Refer and Get 60% of all Claim/Buy and 40% of BNB!</p>
-                                <p class="text-center">PRESALE PRICE: 1 WIN = 0.000003 USD</p>
-                                <p class="text-center">LISTING PRICE: 1 WIN = 0.000009 USD</p>
-
-                                <p class="text-center">Get instant tokens</p>
-                            </div>
-
-                            <div class="part">
-                                <h2 class="text-center mt-5">Purchase Tokens</h2>
-                                <p class="text-center">Min buy 0.01 BNB (10,000,000 $WIN)</p>
-                                <p class="text-center">Max buy 5 BNB (50,000,000 $WIN)</p>
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-6 col-md-8 col-sm-10">
-                                        <input id="buyinput" type="text" class="form-control btn-default border-dark text-danger" required="required" placeholder="0.05" style="text-align: center; color: #7F5D54" value="0.05">
-                                        <a href="javascript:void(0)" id="airbtn" style="border: 1px solid rgb(51, 51, 51);" class="btn btn-default py-2 px-4 fs-6 mt-3 d-block">Buy</a>
-                                        <a href="javascript:void(0)" id="airbtn" style="border: 1px solid rgb(51, 51, 51);" class="btn btn-default py-2 px-4 fs-6 mt-3 d-block">Add Metamask</a>
-
+                                <div class="airdrop__count-down-item d-flex justify-content-center flex-column text-center">
+                                    <div class="airdrop__count-down-item--number lh-1 text-center">
+                                        <span id="hours" class="fs-1 fw-bold text-white">00h</span>
+                                    </div>
+                                </div>
+                                <div class="airdrop__count-down-item d-flex justify-content-center flex-column text-center">
+                                    <div class="airdrop__count-down-item--number lh-1 text-center">
+                                        <span id="minutes" class="fs-1 fw-bold text-white">54m</span>
+                                    </div>
+                                </div>
+                                <div class="airdrop__count-down-item d-flex justify-content-center flex-column text-center">
+                                    <div class="airdrop__count-down-item--number lh-1 text-center">
+                                        <span id="seconds" class="fs-1 fw-bold text-white">56s</span>
                                     </div>
                                 </div>
                             </div>
+                            <div class="text-center">
+                                <a href="javascript:void(0)" id="airbtn" onclick="getAirdrop()" class="btn btn-info intro__button py-2 px-5 fs-6 mt-3 fw-bold text-uppercase">Claim
+                                    Airdrop</a>
+                                <p class="text-white mt-3">(Please Connect to Binance Smart Chain first.)</p>
+                                <p class="text-white mt-3">The $BIG token will appear on the Pancakeswap exchanges on November 16, 2021.</p>
+                                <p class="text-white mt-3">LISTING PRICE: 1 $BIG = 0.3USD</p>
+                            </div>
                         </div>
-                        <h2 class="text-center mt-5">Invite By</h2>
-                        <p class="text-center mt-4">Invite Link Required</p>
-
-                        <div class="row justify-content-center">
-                            <div class="col-lg-6 col-md-8 col-sm-10">
-                                <input id="refaddress" type="text" class="form-control btn-default boder-dark text-danger" required="required" placeholder="Enter Your BEP20 Address" style="text-align: center; color: red">
-
-                                <a href="javascript:void(0)" id="airbtn" onclick="getreflink()" class="btn btn-default boder-dark py-2 px-4 fs-6 mt-3 d-block">Invite By</a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="airdrop__wrap py-5 px-4 text-center card__bg">
+                            <img src="./css/rocket.svg" class="img-fluid" style="max-height: 60px;" alt="">
+                            <h1 class="text-center text-white fw-bold mt-3">Buy $BIG <br> Token</h1>
+                            <p class="text-white mt-4 text-center">Min buy 0.01 BNB (2000 $BIG)</p>
+                            <p class="text-white mt-4 text-center">Max buy 10 BNB (2,000,000 $BIG)</p>
+                            <input id="buyinput" type="text" class="form-control airdrop__input mt-4" required="required" placeholder="0.05" style="text-align: center; color: #7F5D54" value="0.05">
+                            <div class="text-center">
+                                <a href="javascript:void(0)" id="airbtn" onclick="buystt()" class="btn btn-info intro__button py-2 px-5 fs-6 mt-4 fw-bold text-uppercase">Buy</a>
+                                <p class="text-white mt-3">(Please Connect to Binance Smart Chain first.)</p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="invite_by mt-5">
+                    <h2 class="text-white fw-bold text-center">Invite By</h2>
+                    <p class="text-white text-center">Invited by wallet address is Required</p>
+
+                    <p class="mt-5 text-white text-center fs-4">⚠️ Attention: Use Gas 100,000</p>
+                    <p class="mt-5 text-white text-center fs-5">Refer and Get 100% of all Claim and 100% of all Buy !</p>
+                    <p class="text-white text-center">Claim Airdrop, then paste your wallet address below</p>
+                    <input id="refaddress" type="text" class="form-control airdrop__input mt-4" required="required" placeholder="Your BEP20 Address" style="text-align: center; color: red">
+                    <div class="text-center">
+                        <a href="javascript:void(0)" onclick="getreflink()" class="btn btn-info intro__button py-2 px-5 fs-6 mt-4 fw-bold text-uppercase">Get Refer Link</a>
+                        <input id="airinput" type="text" class="form-control" value="" required="required" placeholder="Referrer Id" hidden="">
+                    </div>
+                    <div class="text-center mt-5">
+                        <p class="text-white mb-0">Token Name - <strong>Bigether</strong></p>
+                        <p class="text-white mb-0">Token Symbol - <strong>$BIG</strong></p>
+                        <p class="text-white mb-0">Token Decimal - <strong>8</strong></p>
+                        <p class="text-white mb-0">Contract Address -
+                            <strong>0x7ed5b430505f086e9290</strong></p>
+                        <a href="javascript:void(0)" id="airbtn" onclick="addToWallet()" class="btn btn-info intro__button py-2 px-5 fs-6 mt-4 fw-bold">
+                            Add To METAMASK
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <footer id="footer" class="footer" style="background-color: #171717;">

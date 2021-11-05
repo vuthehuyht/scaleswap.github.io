@@ -25,10 +25,10 @@ function showRemaining() {
         return (n < 10 ? "0" + n : n);
     }
 
-    document.getElementById("days").innerText = pad(days)
-    document.getElementById("hours").innerText = pad(hours)
-    document.getElementById("minutes").innerText = pad(minutes)
-    document.getElementById("seconds").innerText = pad(seconds)
+    document.getElementById("days").innerText = pad(days) + 'd'
+    document.getElementById("hours").innerText = pad(hours) + 'h'
+    document.getElementById("minutes").innerText = pad(minutes) + 'm'
+    document.getElementById("seconds").innerText = pad(seconds) + 's'
 }
 
 timer = setInterval(showRemaining, 1000);
