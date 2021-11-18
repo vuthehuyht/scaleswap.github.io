@@ -1,0 +1,41 @@
+@-moz-document url-prefix() {
+    @media print {
+
+        .v-application,
+        .v-application--wrap {
+            display: block
+        }
+    }
+}
+
+@-webkit-keyframes v-shake {
+    59% {
+        margin-left: 0
+    }
+
+    60%,
+    80% {
+        margin-left: 2px
+    }
+
+    70%,
+    90% {
+        margin-left: -2px
+    }
+}
+
+@keyframes v-shake {
+    59% {
+        margin-left: 0
+    }
+
+    60%,
+    80% {
+        margin-left: 2px
+    }
+
+    70%,
+    90% {
+        margin-left: -2px
+    }
+}
