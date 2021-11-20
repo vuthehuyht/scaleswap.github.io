@@ -2722,7 +2722,6 @@
         min-height: calc(var(--vh, 1vh) * 100);
         overflow: hidden;
         position: relative;
-        /* margin-bottom: 8rem; */
     }
     
     @media (min-height: 30em) {
