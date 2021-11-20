@@ -913,15 +913,21 @@ img {
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) and (max-width: 1100px) {
     .QgNfY .carousel-item-content {
         height: 8.7vw;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .QgNfY .carousel-item-content {
         height: 8.6vw;
+    }
+}
+
+@media (max-width: 760px) {
+    .QgNfY .carousel-item-content {
+        height: 20vw;
     }
 }
 
