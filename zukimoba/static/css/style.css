@@ -1416,8 +1416,23 @@ img {
     width: 66%;
 }
 
+.jrzUMQ .ufo-logo-line-02 .ufo-logo-line-title {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: kanit;
+    text-align: end;
+    font-weight: bold;
+    width: 77%;
+    margin-left: auto;
+}
+
 @media (min-width: 767px) {
     .jrzUMQ .ufo-logo-line-01 .ufo-logo-line-title {
+        font-size: 30px;
+        text-align: center;
+    }
+    .jrzUMQ .ufo-logo-line-02 .ufo-logo-line-title {
         font-size: 30px;
         text-align: center;
     }
