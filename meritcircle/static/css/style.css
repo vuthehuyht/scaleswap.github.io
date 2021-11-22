@@ -1,0 +1,14 @@
+.accordion__panel {
+    display: none;
+}
+
+.accordion__panel.show {
+    display: block;
+}
+
+@media screen and (max-width: 415px){
+    #form1 {
+        height: 1090px !important;
+        overflow: hidden;
+    }
+}
