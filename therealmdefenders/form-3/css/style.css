@@ -1,5 +1,6 @@
 body {
-    background-color: #32025e;
+    background-image: linear-gradient(90deg, #144845, #195956, #1f6b67, #247e78, #2a918a);
+    ;
     font-family: Titillium Web, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     letter-spacing: .025em
 }
@@ -102,12 +103,12 @@ body {
 
 .card__bg {
     transition: all .2s ease-out;
-    background-color: #341762;
+    background-color: #2a918a;
     border-radius: .5rem
 }
 
 .card__bg:hover {
-    background-color: #401c94;
+    background-color: #144845;
     box-shadow: 0 10px 25px -1px rgb(0 0 0/10%), 0 10px 10px 5px rgb(0 0 0/4%);
     transform: translateY(0) scale(1.05) translateX(0)
 }
@@ -171,7 +172,7 @@ body {
 }
 
 .involved {
-    background-image: linear-gradient(40deg, #4c249f 30%, #9c48ba)!important;
+    background-image: linear-gradient(40deg, #144845 30%, #247e78)!important;
     border-radius: .5rem
 }
 
@@ -180,7 +181,7 @@ body {
 }
 
 .involved__bg:hover {
-    background-color: #401c94
+    background-image: linear-gradient( 90deg, #144845, #195956, #1f6b67, #247e78, #2a918a);
 }
 
 .social__img {

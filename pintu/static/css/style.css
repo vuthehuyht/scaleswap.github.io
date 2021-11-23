@@ -6182,3 +6182,19 @@ data-styled.g577[id="HeroV2___StyledDiv9-sc-152y9lt-14"] {
 
 
 /*!sc*/
+
+#form1 {
+    height: 900px;
+}
+
+@media screen and (min-width: 414px) and (max-width: 760px) {
+    #form1 {
+        height: 1050px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+    #form1 {
+        height: 1060px;
+    }
+}
